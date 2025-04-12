@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - StepUp Shoes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <link rel="stylesheet" href="asset/stylesheet.css">
+<style>
+
+</style>
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-shoe-prints"></i> StepUp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                </ul>
+                
+                <!-- Search Bar -->
+                <form class="d-flex ms-lg-3">
+                    <input class="form-control search-box me-2" type="search" placeholder="Search">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                </form>
+
+                <!-- Cart Button -->
+                <button class="btn cart-btn ms-lg-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+                    <i class="fa fa-shopping-cart"></i> Cart
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    
+<!-- Shopping Cart Sidebar (Offcanvas) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                your cart is currently empty
+            </li>
+        </ul>
+    </div>
+ </div>
+ </nav>
+
+  <div class="container">
+    <!-- <h2 class="shop-title text-center mt-3">Shop Our Collection</h2> -->
+    <h2 class="text-center mt-4 animated-heading">Shop by Category</h2>
+    <div class="row mt-4">
+
+        <div class="filter-bar text-center">
+            <a href="category.html"> <button class="btn btn-outline-dark" >Womens</button></a>
+           <a href="category2.html"> <button class="btn btn-outline-dark" >Mens</button></a>
+            <a href="category3.html"> <button class="btn btn-outline-dark" >Kids</button></a>
+          </div>
+          <div class="container my-5">
+      <h4 class="text-center mb-4">Kid's Collection</h4>
+      <div class="container-fluid px-3">
+          <!-- Horizontal scroll for small screens -->
+          <div class="d-sm-none">
+            <div class="d-flex overflow-auto gap-3 pb-3">
+              <img src="baby1.jpg" class="circle-image-mobile">
+              <img src="baby2.webp" class="circle-image-mobile">
+              <img src="baby3.webp" class="circle-image-mobile">
+              <img src="baby4.jpg" class="circle-image-mobile">
+              <img src="baby5.webp" class="circle-image-mobile">
+              <img src="baby6.webp" class="circle-image-mobile">
+
+            </div>
+          </div>
+        
+          <!-- Grid for tablets and up -->
+          <div class="d-none d-sm-block">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md-4 col-lg-3 mb-4 d-flex flex-column align-items-center">
+                <img src="baby1.jpg" class="circle-image-desktop">
+                <figcaption class="figure-caption text-center mt-3">party wear</figcaption>
+
+
+              </div>
+               <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="baby2.webp" class="circle-image-desktop">
+                  <figcaption class="figure-caption text-center mt-3">baby boy shoes</figcaption>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="baby3.webp" class="circle-image-desktop">
+                  <figcaption class="figure-caption text-center mt-3">formal wear</figcaption>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="baby4.jpg" class="circle-image-desktop">
+                  <figcaption class="figure-caption text-center mt-3">summer formal wear</figcaption>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+
+            <!-- products -->
+            <div class="row">
+              <!-- Product 1 -->
+                <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product1.avif" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Classic sneakers</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+
+              
+              
+              <!-- Product 2 -->
+              <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product2.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="Formal Shoes" class="img-fluid">
+                <p><strong>Baby Girls Sneakers</strong> - $75</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+              </div>
+              
+              <!-- Product 3 -->
+              <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product3.webp" style="height: 250px; width: 260px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Girl School Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+              </div>
+            
+               <!-- Product 4 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product4.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>BabyBoy Chapple</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+                 <!-- Product 5 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product5.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Pink Baby Girls Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 6 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product6.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Boy Kehri</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 7 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product7.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Casual Summer Wear</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 8 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product8.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Classic Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 9 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product9.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Boy Part Wear</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 10 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product10.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Boy Strapped Chappal
+                </strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 11 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product11.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>BabyBoy Soft Chapple</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 12 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product12.jpg" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Girls Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 13 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product13.jpg" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>flip-flop Chapple</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 14 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product14.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Classy Party Wear</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 15 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product15.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Girl Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 16 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product16.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Casual Summer Wear</strong> - $50</p>
+                 <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+                 <!-- Product 17 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product17.jpg" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Comfort Slippers
+                </strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 18 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product18.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Girls Party Wear</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 19 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product19.avif" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Boy Blue Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 20 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product20.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Girls Pink Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 21 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product21.avif" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Baby Boys Shoes</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 22 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product22.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Classy flip-flop</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 23 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product23.webp" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Casual Summer Wear</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+               <!-- Product 24 -->
+               <div class="col-6 col-md-4 col-lg-3 product text-center mb-4">
+                <img src="kids-product24.jpg" style="height: 250px; width: 250px; object-fit: cover;" alt="High Heels" class="img-fluid">
+                <p><strong>Casual Summer Wear</strong> - $50</p>
+                <button class="btn  add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+  
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="category.html">1</a></li>
+                  <li class="page-item"><a class="page-link" href="category2.html">2</a></li>
+                  <li class="page-item"><a class="page-link" href="category3.html">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>  
+            </div>
+            <!-- footer -->
+            <footer class="footer py-5">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4 mb-4">
+                          <h3><i class="fas fa-shoe-prints"></i>StepUp</h3>
+                          <p>Premium slippers for children that combine comfort, style, and luxury.</p>
+                          <div class="social-icons">
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-6 mb-4">
+                          <h5>Shop</h5>
+                          <ul class="list-unstyled">
+                              <li><a href="#">Boys</a></li>
+                              <li><a href="#">Girls</a></li>
+                              <li><a href="#">Kids</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-2 col-md-6 mb-4">
+                          <h5>Help</h5>
+                          <ul class="list-unstyled">
+                              <li><a href="#">FAQs</a></li>
+                              <li><a href="#">Shipping</a></li>
+                              <li><a href="#">Returns</a></li>
+                              <li><a href="#">Size Guide</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                          <h5>Contact</h5>
+                          <p><i class="fas fa-map-marker-alt me-2"></i> 123 Royal Street, London</p>
+                          <p><i class="fas fa-phone me-2"></i> +44 123 456 789</p>
+                          <p><i class="fas fa-envelope me-2"></i> hello@elegantsteps.com</p>
+                      </div>
+                  </div>
+                  <hr class="my-4">
+                  <div class="text-center">
+                      <p class="mb-0">&copy; 2023 Elegant Steps. All rights reserved.</p>
+                  </div>
+              </div>
+          </footer>
+      
+      
+          
+      
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
